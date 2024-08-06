@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=1.5cm, right=1.5cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{nameref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+
+\begin{document}
+\textbf{(VMO 2000)} Cho hai đường tròn tâm $I$ và $O$ cắt nhau tại $A, \space B$ phân biệt. $TT'$ là tiếp tuyến chung ngoài bất kỳ của hai đường tròn sao cho $T$ thuộc $(O)$, $T'$ thuộc $(I)$. Đường thẳng qua $T,\space T'$ vuông góc với $OI$ lần lượt tại $S,\space S'$. Tia $AS$ cắt đường tròn $(O)$ tại $R$, tia $AS'$ cắt đường tròn $(I)$ tại $R'$. Chứng minh $B,R,R'$ thẳng hàng.\\
+
+
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+	\clip(-4.237121220588446,-2.1806858784985783) rectangle (14.102465092108613,9.587336794213222);
+	\draw  (2.5,4) circle (2.1127698017986387cm);
+	\draw  (8.09724731050148,3.994303637912748) circle (4.446097179079795cm);
+	\draw [dash pattern=on 4pt off 4pt] (0.5197123283190928,3.263619002974092)-- (11.106412065338652,0.7212763535677098);
+	\draw [dash pattern=on 4pt off 3pt] (0.5197123283190928,3.263619002974092)-- (-2.5681679758996054,4.005157913936655);
+	\draw (-2.5681679758996054,4.005157913936655)-- (6.247915315007175,8.037538889077632);
+	\draw (3.9331073280945623,5.552417347736723)-- (0.5197123283190928,3.263619002974092);
+	\draw (3.9331073280945623,5.552417347736723)-- (11.106412065338652,0.7212763535677098);
+	\draw (-2.5681679758996054,4.005157913936655)-- (6.239689490466133,-0.0451590826785518);
+	\draw (-2.5681679758996054,4.005157913936655)-- (8.09724731050148,3.994303637912748);
+	\draw (1.621203915207932,5.921331225152599)-- (1.6172950322066817,2.08046146815823);
+	\draw (6.247915315007175,8.037538889077632)-- (6.239689490466133,-0.0451590826785518);
+	\draw (1.6172950322066817,2.08046146815823)-- (0.5197123283190928,3.263619002974092);
+	\draw (0.5197123283190928,3.263619002974092)-- (1.621203915207932,5.921331225152599);
+	\draw (6.247915315007175,8.037538889077632)-- (3.929944548349397,2.4446689021182344);
+	\draw (3.929944548349397,2.4446689021182344)-- (6.239689490466133,-0.0451590826785518);
+	\draw (6.239689490466133,-0.0451590826785518)-- (11.106412065338652,0.7212763535677098);
+	\draw (11.106412065338652,0.7212763535677098)-- (6.247915315007175,8.037538889077632);
+	\draw (1.621203915207932,5.921331225152599)-- (3.929944548349397,2.4446689021182344);
+	\draw (3.929944548349397,2.4446689021182344)-- (1.6172950322066817,2.08046146815823);
+	\draw (3.9331073280945623,5.552417347736723)-- (3.929944548349397,2.4446689021182344);
+	\begin{scriptsize}
+		\draw [fill=uuuuuu] (2.5,4) circle (2pt);
+		\draw[color=uuuuuu] (2.315606218770352,3.7287903579918074) node {\normalsize$I$};
+		\draw [fill=uuuuuu] (8.09724731050148,3.994303637912748) circle (2pt);
+		\draw[color=uuuuuu] (8.378112051315325,4.226690562205685) node {\normalsize$O$};
+		\draw [fill=uuuuuu] (3.9331073280945623,5.552417347736723) circle (2pt);
+		\draw[color=uuuuuu] (3.745359827377287,6.124350571171382) node {\normalsize$A$};
+		\draw [fill=uuuuuu] (3.929944548349397,2.4446689021182344) circle (2pt);
+		\draw[color=uuuuuu] (3.7944300271083202,2.0141537489364536) node {\normalsize$B$};
+		\draw [fill=uuuuuu] (1.6172950322066817,2.08046146815823) circle (2pt);
+		\draw [fill=uuuuuu] (1.621203915207932,5.921331225152599) circle (2pt);
+		\draw [fill=uuuuuu] (1.621203915207932,5.921331225152599) circle (2pt);
+		\draw[color=uuuuuu] (1.5195656150944732,6.3431867717989805) node {\normalsize$T'$};
+		\draw [fill=uuuuuu] (6.247915315007175,8.037538889077632) circle (2pt);
+		\draw[color=uuuuuu] (6.069294439122167,8.415957584171643) node {\normalsize$T$};
+		\draw [fill=uuuuuu] (1.6192494737073069,4.000896346655416) circle (2pt);
+		\draw[color=uuuuuu] (1.281893213839295,4.306690562205685) node {\normalsize$S'$};
+		\draw [fill=uuuuuu] (6.2438024027366525,3.9961899031995425) circle (2pt);
+		\draw[color=uuuuuu] (6.561615841722179,4.3027373620263715) node {\normalsize$S$};
+		\draw [fill=uuuuuu] (0.5197123283190928,3.263619002974092) circle (2pt);
+		\draw[color=uuuuuu] (0.29725040863927166,2.9815859549434704) node {\normalsize$R'$};
+		\draw [fill=uuuuuu] (11.106412065338652,0.7212763535677098) circle (2pt);
+		\draw[color=uuuuuu] (11.503666068349884,0.5334703400604139) node {\normalsize$R$};
+		\draw [fill=uuuuuu] (-2.5681679758996054,4.005157913936655) circle (2pt);
+		\draw[color=uuuuuu] (-3.0320228094711546,4.070181960322888) node {\normalsize$D$};
+		\draw [fill=uuuuuu] (1.6172950322066817,2.08046146815823) circle (2pt);
+		\draw[color=uuuuuu] (1.4365422151841288,1.6104345478605701) node {\normalsize$X'$};
+		\draw [fill=uuuuuu] (6.239689490466133,-0.0451590826785518) circle (2pt);
+		\draw[color=uuuuuu] (6.086271039211823,-0.4823362645120915) node {\normalsize$X$};
+	\end{scriptsize}
+\end{tikzpicture}
+
+\underline{\textbf{Solution.}}
+
+Tiếp tuyến chung ngoài $TT'$ cắt $OI$ tại $D$. Lấy $X, X'$ lần lượt là đối xứng của $T,T'$ qua $OI$.\\
+Khi đó $OI,TT',XX'$ đồng quy tại $D$. Để ý rằng $B,R,R'$ thẳng hàng khi và chỉ khi $D,B,R,R'$ thẳng hàng. Như vậy bài toán sẽ được giải quyết nếu ta chứng minh các tứ giác $T'R'X'B, TRXB$ là tứ giác điều hoà. Khi đó tiếp tuyến tại $T',X'$ của $(I)$ và $BR'$ đồng quy; tiếp tuyến tại $T,R$ của $(O)$ và $BR$ đồng quy.\\
+
+Ta có $AB\perp OI;\enspace T'X'\perp OI;\enspace TX\perp OI\Rightarrow TX\parallel AB\parallel OI$. Cũng có $S',S$ lần lượt là trung điểm của $T'X',TX$.\\
+
+Suy ra: $\begin{cases}
+	-1=A(T'X'S'B)=(T'X'R'B)\\
+	-1=A(TXSB)=(TXRB)
+\end{cases}$ (Xét phép chiếu xuyên tâm $A$)\\
+
+Vậy các tứ giác $T'R'X'B, TRXB$ là tứ giác điều hoà. Hoàn tất chứng minh.
+
+
+
+\end{document}
